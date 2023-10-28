@@ -1,5 +1,5 @@
 <div class="center-container">
-    <app-wheel [class.spinning]="hasGameStarted" [style.animation-duration]="getAnimationDuration()"></app-wheel>
+    <app-wheel [class.spinning]="hasGameStarted" [style.animation-duration]="speed+'s'" [style.animation-direction]="counterclockwise ? 'reverse' : 'normal'"></app-wheel>
 </div>
 
 <router-outlet></router-outlet>
