@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
 
   gameplayListener = (event: KeyboardEvent) => {
     if (event.key === ' ' || event.key === 'Spacebar') {
-      this.speed -= 0.3;
+      this.speed *= 0.96;
       this.counterclockwise = !this.counterclockwise;
     }
   };
